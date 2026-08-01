@@ -1,0 +1,40 @@
+/* Type selector */
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+}
+
+/* Class selector */
+.dog-photo {
+    width: 10rem;
+}
+
+/* ID selector */
+#copyright {
+    color: #666666;
+}
+
+/* Relational selector (descendant) */
+main p {
+    color: #333333;
+}
+
+/* Combination selector (grouping) */
+ul, ol {
+    margin-left: 1.5rem;
+}
+
+/* Pseudo-class */
+a:hover {
+    color: #e74c3c;
+}
+
+/* Attribute selector */
+a[href] {
+    text-decoration: underline;
+}
+
+/* Pseudo-element */
+main p::first-letter {
+    font-size: 1.5rem;
+}
