@@ -35,3 +35,25 @@ effect was obvious right away.
 The gap property inside the flexbox container confused me a bit at
 first, I wasn't sure how it was different from just adding margin to
 each item, but once I saw it in action it made more sense.
+
+
+## Advanced Selectors Challenge Reflection
+
+### Which section did you focus on for advanced selectors?
+I used my "Where I'm From" section since it already had a heading, paragraphs,
+a list, and a link, which gave me enough content to style in different ways.
+
+### Why are nested selectors more useful than global styling?
+Global styles apply to every matching element on the page, even ones I didn't
+intend to change. Nested selectors let me target elements based on where they
+appear, so the same tag can look different depending on which section it's in.
+
+### One selector that felt especially powerful?
+The direct child selector, .roots-section > p, stood out to me. It let me
+style the top-level paragraphs in my section while skipping a paragraph nested
+inside a div, even though both elements were the same tag.
+
+### One selector that took time to understand?
+The difference between .roots-section p and .roots-section > p took some time
+to fully understand. Once I saw that my nested paragraph only responded to one
+of the two rules, the distinction made a lot more sense.
