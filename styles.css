@@ -2,12 +2,9 @@
 h1 {
     font-family: Arial, sans-serif;
     font-size: 2rem;
+    color: #1565c0;
 }
 
-/* Class selector */
-.dog-photo {
-    width: 10rem;
-}
 
 /* ID selector */
 #copyright {
@@ -26,15 +23,60 @@ ul, ol {
 
 /* Pseudo-class */
 a:hover {
-    color: #e74c3c;
+    color: #1565c0;
 }
 
 /* Attribute selector */
 a[href] {
     text-decoration: underline;
+    color: #1976d2;
 }
 
 /* Pseudo-element */
 main p::first-letter {
     font-size: 1.5rem;
+}
+
+
+/* Styling "Where I'm From" */
+.roots-section {
+    background-color: #e3f2fd;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0.5rem;
+}
+
+.roots-section h2 {
+    color: #1565c0;
+}
+
+/* Flexbox layout for inside list part */
+.roots-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+}
+
+.roots-list p {
+    background-color: #1976d2;
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    border-radius: 0.3rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* styling dog photo */
+.dog-photo {
+    max-width: 100%;
+    width: 10rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.15rem 0.15rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.dog-photo:hover {
+    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
 }
