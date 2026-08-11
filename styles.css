@@ -59,6 +59,10 @@ main p::first-letter {
     line-height: 1.8;
 }
 
+.roots-section > p {
+    font-weight: bold;
+}
+
 .roots-section a {
     color: #0d47a1;
     font-weight: bold;
@@ -68,6 +72,10 @@ main p::first-letter {
 .roots-section a:hover {
     color: #ff6f00;
     text-decoration: underline;
+}
+
+img.dog-photo{
+    border: 0.15rem solid var(--main-blue);
 }
 
 /* Flexbox layout for inside list part */
