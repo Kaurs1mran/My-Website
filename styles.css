@@ -1,8 +1,12 @@
+:root {
+    --main-blue: #1565c0;
+}
+
 /* Type selector */
 h1 {
     font-family: Arial, sans-serif;
     font-size: 2rem;
-    color: #1565c0;
+    color: var(--main-blue);
 }
 
 
@@ -23,7 +27,7 @@ ul, ol {
 
 /* Pseudo-class */
 a:hover {
-    color: #1565c0;
+    color: var(--main-blue);
 }
 
 /* Attribute selector */
@@ -47,7 +51,23 @@ main p::first-letter {
 }
 
 .roots-section h2 {
-    color: #1565c0;
+    color: var(--main-blue);
+    font-style: italic;
+}
+
+.roots-section p {
+    line-height: 1.8;
+}
+
+.roots-section a {
+    color: #0d47a1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.roots-section a:hover {
+    color: #ff6f00;
+    text-decoration: underline;
 }
 
 /* Flexbox layout for inside list part */
@@ -61,7 +81,6 @@ main p::first-letter {
 }
 
 .roots-list p {
-    background-color: #1976d2;
     color: #ffffff;
     padding: 0.75rem 1rem;
     border-radius: 0.3rem;
@@ -79,4 +98,20 @@ main p::first-letter {
 
 .dog-photo:hover {
     box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.nested-note img {
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+/* Pseudo-class nested inside a section- highlighting first item */
+.roots-list p:first-child {
+    background-color: #cb1c1c;
+}
+.roots-list p:nth-child(2){
+    background-color: #42a5f5;
+}
+.roots-list p:last-child {
+    background-color: rgb(30, 194, 153);
 }
