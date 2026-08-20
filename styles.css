@@ -366,30 +366,30 @@ img.dog-photo {
 
 /* Media query 1: tablets and smaller - stack the 3-column layout */
 @media (max-width: 45rem) {
-  .page2-columns {
-    flex-direction: column;
-  }
+    .page2-columns {
+        flex-direction: column;
+    }
 
-  .big-photo,
-  .medium-photo {
-    width: 10rem;
-  }
+    .big-photo,
+    .medium-photo {
+        width: 10rem;
+    }
 }
 
 /* Media query 2: phones - reduce nav spacing and heading size */
 @media (max-width: 30rem) {
-  .site-nav {
-    gap: 0.75rem;
-    padding: 0.75rem;
-  }
+    .site-nav {
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
 
-  h1 {
-    font-size: 1.5rem;
-  }
+    h1 {
+        font-size: 1.5rem;
+    }
 
-  .festival-grid {
-    flex-direction: column;
-  }
+    .festival-grid {
+        flex-direction: column;
+    }
 }
 
 .zafarnama-img {
@@ -405,7 +405,7 @@ img.dog-photo {
 
 .reading-grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     list-style: none;
     margin: 1rem 0 0 0;
@@ -416,4 +416,63 @@ img.dog-photo {
     background-color: var(--cream-bg);
     padding: 1rem;
     border-radius: 0.5rem;
+}
+
+/* Grid Layout Section */
+.grid-layout-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.grid-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #dddddd;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.1);
+}
+
+.grid-img {
+    width: 100%;
+    max-height: 10rem;
+    object-fit: contain;
+    border-radius: 0.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.grid-card h3 {
+    color: var(--phulkari-red);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.grid-card p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* Grid section responsive behavior */
+
+/* Tablet (landscape and portrait, up to 1024px) - 2 columns */
+@media (max-width: 64rem) {
+    .grid-layout-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet portrait (up to 767px) - slightly tighter gap */
+@media (max-width: 47.9375rem) {
+  .grid-layout-section {
+    gap: 1rem;
+  }
+}
+
+/* Mobile (under 480px) - 1 column */
+@media (max-width: 30rem) {
+    .grid-layout-section {
+        grid-template-columns: 1fr;
+    }
 }
