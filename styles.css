@@ -465,9 +465,9 @@ img.dog-photo {
 
 /* Tablet portrait (up to 767px) - slightly tighter gap */
 @media (max-width: 47.9375rem) {
-  .grid-layout-section {
-    gap: 1rem;
-  }
+    .grid-layout-section {
+        gap: 1rem;
+    }
 }
 
 /* Mobile (under 480px) - 1 column */
