@@ -79,3 +79,21 @@ Without them, the 3-column grid would stay squished together on
 smaller screens. The media queries let the grid respond to the
 screen size, dropping columns as things got narrower so each card
 still has enough room to breathe.
+
+---
+
+## Peer Feedback & Self-Assessment
+
+I submitted my Module 8 post late, so I didn't get peer reviews in time. Per the assignment's fallback option, I self-assessed my site instead using what we covered in Ch 16.
+
+I spent most of my time on content and research, especially for the history pages, and with more time I could have put more polish into the visual side of things too. I'm still working on cleaning things up and adding more documentation as I go.
+
+**Issue #1: Inconsistent nav labels**
+The nav linked to the same page but said "More" on some pages and "Sikh History" on others.
+
+*Fix:* Updated the nav so it says "Sikh History" consistently across every page.
+
+**Issue #2: Homepage felt cluttered**
+The homepage had a lot stacked together (intro, dog photos, favorites grid, roots section) with no clear separation between them.
+
+*Fix:* Added a divider line to break up the sections visually.
