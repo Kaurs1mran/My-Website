@@ -4,59 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simran's Website</title>
-     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="culture.html">Punjab Culture</a>
+      <a href="page3.html">More</a>
+    </nav>
     <!-- Page heading -->
     <h1>Hey, I'm Simran!</h1>
 
     <!-- Main content of the homepage -->
     <main>
       <p>
-        Welcome to my website! Take a look around and explore what I've created
-        as part of my web dev journey!
+        Welcome to my website! This site is where I'm putting together bits of
+        who I am, my background, and what I'm into.
       </p>
 
       <!--Photo of my dog-->
-      <img src="images/dog.jpeg" alt="Photo of my dog" class="dog-photo" />
+      <p>
+        This is Enzo, my golden retriever. Most of the photos I actually have
+        are of him, somehow.
+      </p>
+      <div class="dog-gallery">
+        <img src="images/dog.jpeg" alt="My dog" class="dog-photo" />
+        <img src="images/dog2.jpeg" alt="My dog" class="dog-photo" />
+        <img src="images/dog3.jpeg" alt="My dog" class="dog-photo" />
+      </div>
 
       <!--Unordered list of things I like-->
       <h2>Things I Like</h2>
-      <ul>
-        <li>Art</li>
-        <li>Music</li>
-        <li>Reading</li>
-        <li>Anime</li>
-      </ul>
-
-      <!--Ordered list-->
-      <h2>Get Started</h2>
-      <ol>
-        <li>Say hi</li>
-        <li>Check out my site</li>
-      </ol>
+      <div class="interests-grid">
+        <div class="interest-card">
+          <h3>Reading</h3>
+        </div>
+        <div class="interest-card">
+          <h3>Drawing</h3>
+        </div>
+        <div class="interest-card">
+          <h3>Animals</h3>
+        </div>
+        <div class="interest-card">
+          <h3>Anime</h3>
+        </div>
+      </div>
 
       <!-- Backgroud -->
-       <section class="roots-section">
+      <section class="roots-section">
         <h2>Where I'm From</h2>
-        <p>
-          I'm Originally from Punjab, India. It's a big part of who I am.
-        </p>
-
-        <div class="nested-note">
-          <p>I miss my rooftop back home, watching and feeding birds, even peacocks.</p>
-          <img src="images/peacock.jpeg" alt="A peacock on my terrace back home" class="dog-photo" />
-        </div>
+        <p>I'm Originally from Punjab, India. It's a big part of who I am.</p>
 
         <div class="roots-list">
-          <p>Giddha</p>
-          <p>Music</p>
-          <p>Food</p>
+          <a href="https://www.youtube.com/@BhangraEmpire/featured">Dance</a>
+          <a
+            href="https://open.spotify.com/playlist/37i9dQZF1DWXVJK4aT7pmk?si=54df5633cfe44718"
+            >Music</a
+          >
+          <a href="https://mehfilindiancuisineandbar.com/">Food</a>
         </div>
 
-        <p><a href="https://en.wikipedia.org/wiki/Punjab,_India">Learn more about Punjab</a></p>
-       </section>
+        <p>
+          <a href="https://en.wikipedia.org/wiki/Punjab,_India"
+            >Learn more about Punjab</a
+          >
+        </p>
+      </section>
 
       <!--Link-->
       <p><a href="https://github.com/Kaurs1mran">Visit My GitHub</a></p>

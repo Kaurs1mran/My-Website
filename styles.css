@@ -1,14 +1,36 @@
 :root {
-    --main-blue: #1565c0;
+    --phulkari-pink: #c2185b;
+    --phulkari-teal: #00695c;
+    --phulkari-blue: #1545c0;
+    --phulkari-gold: #d9a441;
+    --phulkari-green: #4b7f52;
+    --phulkari-red: #a63a2e;
+    --cream-bg: #fdf6ec;
+    --text-dark: #4a2c1d;
+}
+
+/* Phulkari-inspired diamond pattern background */
+body {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: var(--cream-bg);
+    background-image:
+        linear-gradient(45deg, rgba(194, 24, 91, 0.05) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(0, 105, 92, 0.05) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(217, 164, 65, 0.05) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(21, 101, 192, 0.05) 75%);
+    background-size: 2rem 2rem;
+    background-position: 0 0, 0 1rem, 1rem -1rem, -1rem 0px;
 }
 
 /* Type selector */
 h1 {
     font-family: Arial, sans-serif;
     font-size: 2rem;
-    color: var(--main-blue);
+    color: var(--phulkari-red);
+    text-align: center;
 }
-
 
 /* ID selector */
 #copyright {
@@ -17,23 +39,24 @@ h1 {
 
 /* Relational selector (descendant) */
 main p {
-    color: #333333;
+    color: var(--text-dark);
 }
 
 /* Combination selector (grouping) */
-ul, ol {
+ul,
+ol {
     margin-left: 1.5rem;
 }
 
 /* Pseudo-class */
 a:hover {
-    color: var(--main-blue);
+    color: var(--phulkari-teal);
 }
 
 /* Attribute selector */
 a[href] {
     text-decoration: underline;
-    color: #1976d2;
+    color: var(--phulkari-blue);
 }
 
 /* Pseudo-element */
@@ -41,17 +64,58 @@ main p::first-letter {
     font-size: 1.5rem;
 }
 
+/* Navigation menu */
+.site-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: var(--phulkari-red);
+    margin-bottom: 1.5rem;
+}
 
-/* Styling "Where I'm From" */
-.roots-section {
-    background-color: #e3f2fd;
-    padding: 1.5rem;
-    margin: 2rem 0;
+.site-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-nav a:hover {
+    color: var(--phulkari-gold);
+}
+
+/* Hero banner image */
+.hero-banner {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.hero-banner img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
     border-radius: 0.5rem;
 }
 
+/* Styling "Where I'm From" */
+.roots-section {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0.5rem;
+    border-top: 0.4rem solid;
+    border-image: repeating-linear-gradient(45deg,
+            #c2185b 0px,
+            #c2185b 10px,
+            #d9a441 10px,
+            #d9a441 20px,
+            #00695c 20px,
+            #00695c 30px) 10;
+}
+
 .roots-section h2 {
-    color: var(--main-blue);
+    color: var(--phulkari-red);
     font-style: italic;
 }
 
@@ -59,23 +123,32 @@ main p::first-letter {
     line-height: 1.8;
 }
 
-.roots-section > p {
+.roots-section>p {
     font-weight: bold;
 }
 
 .roots-section a {
-    color: #0d47a1;
+    color: var(--phulkari-teal);
     font-weight: bold;
     text-decoration: none;
 }
 
 .roots-section a:hover {
-    color: #ff6f00;
+    color: var(--phulkari-gold);
     text-decoration: underline;
 }
 
-img.dog-photo{
-    border: 0.15rem solid var(--main-blue);
+img.dog-photo {
+    border: 0.15rem solid var(--phulkari-gold);
+}
+
+/*dog photos*/
+.dog-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
 }
 
 /* Flexbox layout for inside list part */
@@ -88,18 +161,20 @@ img.dog-photo{
     padding: 0;
 }
 
-.roots-list p {
+.roots-list p,
+.roots-list a {
     color: #ffffff;
     padding: 0.75rem 1rem;
     border-radius: 0.3rem;
     margin: 0;
     font-weight: bold;
+    display: inline-block;
 }
 
 /* styling dog photo */
 .dog-photo {
     max-width: 100%;
-    width: 10rem;
+    width: 14rem;
     border-radius: 0.5rem;
     box-shadow: 0.15rem 0.15rem 0.3rem rgba(0, 0, 0, 0.3);
 }
@@ -108,18 +183,237 @@ img.dog-photo{
     box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 
-.nested-note img {
-    margin-bottom: 1.5rem;
-    display: block;
+/* Pseudo-class nested inside a section- highlighting first item */
+.roots-list p:first-child,
+.roots-list a:first-child {
+    background-color: var(--phulkari-teal);
 }
 
-/* Pseudo-class nested inside a section- highlighting first item */
-.roots-list p:first-child {
-    background-color: #cb1c1c;
+.roots-list p:nth-child(2),
+.roots-list a:nth-child(2) {
+    background-color: var(--phulkari-pink);
 }
-.roots-list p:nth-child(2){
-    background-color: #42a5f5;
+
+.roots-list p:last-child,
+.roots-list a:last-child {
+    background-color: var(--phulkari-blue);
 }
-.roots-list p:last-child {
-    background-color: rgb(30, 194, 153);
+
+.interests-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.interest-card {
+    background-color: #ffffff;
+    border: 0.1rem solid #dddddd;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 9rem;
+    text-align: center;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+
+.interest-card h3 {
+    color: var(--text-dark);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.interest-card:nth-child(1) {
+    border-top: 0.3rem solid var(--phulkari-pink);
+}
+
+.interest-card:nth-child(2) {
+    border-top: 0.3rem solid var(--phulkari-teal);
+}
+
+.interest-card:nth-child(3) {
+    border-top: 0.3rem solid var(--phulkari-blue);
+}
+
+.interest-card:nth-child(4) {
+    border-top: 0.3rem solid var(--phulkari-gold);
+}
+
+/* Three-column layout for top section */
+.page2-columns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, #fdf6ec, #fbe9d0);
+}
+
+.page2-columns figure {
+    margin: 0;
+    text-align: center;
+}
+
+.page2-columns figcaption {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--text-dark);
+    margin-top: 0.4rem;
+}
+
+.page2-text {
+    flex: 1;
+    min-width: 15rem;
+    max-width: 25rem;
+    padding: 1rem;
+}
+
+.page2-text h2 {
+    color: var(--phulkari-red);
+}
+
+.page2-text p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.big-photo {
+    width: 16rem;
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0.15rem 0.15rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+/* Culture page sections */
+.culture-section {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+}
+
+.culture-section h2 {
+    color: var(--phulkari-red);
+}
+
+.phulkari-accent {
+    border-top: 0.4rem solid;
+    border-image: repeating-linear-gradient(45deg,
+            #c2185b 0px,
+            #c2185b 10px,
+            #d9a441 10px,
+            #d9a441 20px,
+            #00695c 20px,
+            #00695c 30px,
+            #1565c0 30px,
+            #1565c0 40px) 10;
+}
+
+/* Festival card grid */
+.festival-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.festival-card {
+    flex: 1;
+    min-width: 12rem;
+    background-color: var(--cream-bg);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.festival-card:nth-child(1) {
+    border-top: 0.3rem solid var(--phulkari-pink);
+}
+
+.festival-card:nth-child(2) {
+    border-top: 0.3rem solid var(--phulkari-gold);
+}
+
+.festival-card:nth-child(3) {
+    border-top: 0.3rem solid var(--phulkari-teal);
+}
+
+.festival-img {
+    width: 100%;
+    max-height: 12rem;
+    object-fit: cover;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.photo-credit {
+    font-size: 0.75rem;
+    color: #888888;
+}
+
+.photo-credit a {
+    color: #888888;
+}
+
+.medium-photo {
+    width: 11rem;
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0.15rem 0.15rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+/* Media query 1: tablets and smaller - stack the 3-column layout */
+@media (max-width: 45rem) {
+  .page2-columns {
+    flex-direction: column;
+  }
+
+  .big-photo,
+  .medium-photo {
+    width: 10rem;
+  }
+}
+
+/* Media query 2: phones - reduce nav spacing and heading size */
+@media (max-width: 30rem) {
+  .site-nav {
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .festival-grid {
+    flex-direction: column;
+  }
+}
+
+.zafarnama-img {
+    width: 16rem;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    box-shadow: 0.15rem 0.15rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+/* Grid Layout for further reading section*/
+
+.reading-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    list-style: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+.reading-grid li {
+    background-color: var(--cream-bg);
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
