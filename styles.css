@@ -401,6 +401,12 @@ img.dog-photo {
     box-shadow: 0.15rem 0.15rem 0.3rem rgba(0, 0, 0, 0.3);
 }
 
+/* Visual separation between homepage sections */
+.grid-layout-section {
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid #e0d5c5;
+}
+
 /* Grid Layout for further reading section*/
 
 .reading-grid {
@@ -475,4 +481,27 @@ img.dog-photo {
     .grid-layout-section {
         grid-template-columns: 1fr;
     }
+}
+
+/* Timeline table styling */
+.timeline-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.timeline-table th,
+.timeline-table td {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 0.1rem solid #e0d5c5;
+}
+
+.timeline-table th {
+    background-color: var(--phulkari-red);
+    color: #ffffff;
+}
+
+.timeline-table tr:nth-child(even) {
+    background-color: var(--cream-bg);
 }
