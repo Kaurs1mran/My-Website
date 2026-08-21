@@ -1,15 +1,26 @@
-# My-Website
+# My-Website 
 
-This is my personal website, built as part of my web development course.
+Simran's Website is my personal website exploring who I am, where I'm from, and the history behind it.
+
+**Live site:** https://kaurs1mran.github.io/My-Website/
 
 ## About
 
-This site is a work in progress that I'm building over the course of several assignments.
+It started as a work in progress that I built over the course of several assignments.
+The whole site is visually themed around Phulkari, a traditional style of Punjabi embroidery, bright, geometric, and made up of repeating diamond and floral patterns. I used it as the base for the color palette (pink, teal, blue, gold, deep red) and the diagonal striped borders you'll see across the site, since it felt like a more meaningful way to tie the design back to where I'm from, rather than just picking colors that looked nice.
+
+The site includes a homepage with some of my current favorites, a full page on Punjab culture (food, dance, music, traditional clothing, festivals), and two history pages, one covering Sikhi's origins and early history, and another covering the Sikh Empire through independence and its more recent, heavier chapters.
+
+I made the history pages especially in-depth because Sikh history genuinely isn't something a lot of people know much about, even though it's full of stories about courage, sacrifice, and resistance that deserve more attention. This was my attempt to make that information more accessible, well researched, and properly sourced, while still keeping it personal.
 
 ## Pages
 
 - `index.html` – Homepage
+- `culture.html` – Punjab Culture
+- `history.html` – Sikh History
+- `empire.html` – Empire to Independence
 
+---
 ## Built With
 
 - HTML
@@ -18,7 +29,6 @@ This site is a work in progress that I'm building over the course of several ass
 ---
 
 ## CSS & Section Styling Challenge Reflection
-
 
 ### What section did you focus on styling and why?
 I styled the "Where I'm From" section since it was new, and I wanted it to
@@ -82,7 +92,7 @@ still has enough room to breathe.
 
 ---
 
-## Peer Feedback & Self-Assessment
+## Peer Feedback & Self-Assessment 
 
 I submitted my Module 8 post late, so I didn't get peer reviews in time. Per the assignment's fallback option, I self-assessed my site instead using what we covered in Ch 16.
 
@@ -90,10 +100,37 @@ I spent most of my time on content and research, especially for the history page
 
 **Issue #1: Inconsistent nav labels**
 The nav linked to the same page but said "More" on some pages and "Sikh History" on others.
-
 *Fix:* Updated the nav so it says "Sikh History" consistently across every page.
 
 **Issue #2: Homepage felt cluttered**
 The homepage had a lot stacked together (intro, dog photos, favorites grid, roots section) with no clear separation between them.
-
 *Fix:* Added a divider line to break up the sections visually.
+
+---
+
+## Peer Feedback & What I Fixed
+
+Ethan Prior reviewed my site and gave three suggestions, all tied to specific rubric items:
+
+**1. Indentation inconsistency**
+He noticed my HTML wasn't consistently indented across all 4 pages, and suggested running the formatter shortcut (Shift-Alt-F).
+*Fix:* Ran the formatter on every HTML file to standardize indentation.
+
+**2. File naming**
+He pointed out that 3 of my pages were named generically (`index`, `page3`, `page4`) and suggested renaming them to something more descriptive.
+*Fix:* Renamed `page3.html` and `page4.html` to `history.html` and `empire.html`, and updated every nav link to match.
+
+**3. Image folder organization**
+He suggested moving some of my extra images out of the flat `images` folder into subfolders.
+*Fix:* Reorganized images into `images/homepage`, `images/culture`, and `images/history`, and updated every image path in the HTML to match.
+
+---
+
+## Credits
+
+Favicon: Dagger emoji favicon by favicon.io, based on Twemoji, licensed under CC-BY 4.0.
+https://favicon.io/emoji-favicons/dagger/
+
+Festival photos on the Punjab Culture page are credited individually next to each image, sourced from Unsplash.
+
+Sources for the history pages are linked throughout, with a dedicated Sources section on the Empire to Independence page for more recent history.
